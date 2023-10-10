@@ -1,0 +1,32 @@
+---
+const page = [
+{name:"Home", url:"/"},
+{name:"About", url:"/about"},
+{name:"Contact", url:"/contact"},
+{name:"Blog", url:"/blog"}
+]
+
+---
+<script>
+//const menuToggle = document.querySelector('.menu-toggle input')
+//const nav = document.querySelector('nav .menu')
+//menuToggle.addEventListener('click', function(){
+//  nav.classList.toggle('slide')
+//})
+</script>
+<nav>
+  <div class="logo">
+    <span>Dzoe</span>
+  </div>
+  <div class="menu">
+  {page.map(item =>(
+    <li><a href={item.url}>{item.name}</a></li>
+  ))}
+  </div>
+  <input type="checkbox">
+  <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>

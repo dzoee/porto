@@ -1,0 +1,65 @@
+$PrimaryColor: #312119;
+$TextColor: whitesmoke;
+
+body {
+  background-color: $PrimaryColor;
+}
+
+.container {
+  gap: 1em;
+  display: flex;
+  padding-top: 4em;
+  color: $TextColor;
+  align-items: center;
+  flex-direction: column;
+  
+  .logo {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-position: top;
+    background-color: gray;
+  }
+  
+  .name {
+    font-size: 20px;
+  }
+  
+  .sosmed {
+    gap: 1rem;
+    display: flex;
+    
+    a {
+      i {
+        width: 0.8rem;
+      }
+    }
+  }
+  
+  .card {
+    gap: 1rem;
+    width: 70%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border-radius: .5em;
+    background-color: brown;
+    box-shadow: 5px 10px 0 black;
+    justify-content: space-between;
+    
+    .icon {
+      color: mediumpurple;
+    }
+    
+    .text {}
+    
+    .action {
+      color: #8787a3;
+      cursor: pointer;
+      font-size: 0.8em;
+      transform: translate(5px, -10px);
+    }
+  }
+}

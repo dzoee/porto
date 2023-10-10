@@ -1,0 +1,11 @@
+---
+import "./../styles/main.scss"
+import Body from "./../layouts/LayoutMain.astro"
+import Navbar from "./../components/navbar.astro"
+
+const title= "Home"
+---
+<Body title= {title}>
+  <Navbar />
+  <a href="#header">{title}</a>
+</Body>

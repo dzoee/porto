@@ -1,0 +1,30 @@
+---
+import "./../styles/main.scss"
+import Body from "./../layouts/LayoutMain.astro"
+import Card from "./../components/CardBio.astro"
+const Sosmed = [
+{name: "fa-brands fa-github", url: "https://github.com/dzoee"},
+{name: "fa-brands fa-youtube", url: "https://youtube.com/@Dzoe3?si=xhdHVldh1cn83lK-"},
+{name: "fa-brands fa-tiktok", url:
+"https://www.tiktok.com/@dzoee_?_t=8gNLd6G0tmB&_r=1"},
+{name: "fa-brands fa-instagram", url: "https://instagram.com/dzoe.id?igshid=YTQwZjQ0NmI0OA=="}
+]
+---
+<Body>
+  <script src="https://kit.fontawesome.com/9c058eb2d5.js" crossorigin="anonymous"></script>
+  <div class="container">
+    <span class="logo">
+    </span>
+    <span class="name">Dzoe</span>
+    <span class="deskripsi">Hi i am Developer</span>
+    <span class="sosmed">
+      {Sosmed.map(media =>(
+      <a href= { media.url } target = "blank" >
+        <i class= { media.name }/>
+        </a>
+        ))
+      }
+    </span>
+    <Card />
+  </div>
+</Body>

@@ -1,0 +1,10 @@
+@use 'reset/reset';
+@use 'navbar/navbar';
+@use 'bio/bio';
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@500&display=swap');
+body{
+  font-family: /*'Barlow Condensed'*/'Poppins', sans-serif;
+}
+header{
+  height: 1000px;
+}

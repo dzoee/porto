@@ -1,0 +1,17 @@
+---
+import "./../styles/main.scss"
+import Body from "./../layouts/LayoutMain.astro"
+import Navbar from "./../components/navbar.astro"
+
+const posts = await Astro.glob('../posts/*.md')
+const title= "Blog"
+---
+<Body title= {title}>
+  <Navbar/>
+  {posts.map(post =>(
+  <h1>{post.frontmatter.title}</h1>
+  <h1>{post.frontmatter.name}</h1>
+  <p>{post.frontmatter.description}</p>
+  ))}
+  <header></header>
+</Body>
